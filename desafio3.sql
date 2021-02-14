@@ -1,1 +1,1 @@
-SELECT COUNTRY_NAME AS 'País', IF(REGION_ID = 1, 'incluído', 'não incluído') AS 'Status Inclusão' FROM hr.countries ORDER BY COUNTRY_NAME;
+SELECT JOB_TITLE AS 'Cargo', (MAX_SALARY - MIN_SALARY) AS "Diferença entre salários máximo e mínimo" FROM hr.jobs ORDER BY (MAX_SALARY - MIN_SALARY), JOB_TITLE;
